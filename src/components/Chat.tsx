@@ -11,9 +11,9 @@ interface ChatProps {
 export default function Chat({messageText,name,ocupation, onClose, onSendMessage, source}:ChatProps) {
     const [response , setResponse] = useState<string>();
   return (
-    <div>
+    <div className=" w-[375px] rounded-3xl overflow-hidden" >
         {/* message + sender  */}
-        <div className=" h-44 w-[375px] rounded-3xl overflow-hidden">
+        <div >
             {/* image + name+ occupation + close button */}
             <div className=" bg-[#4643D3] h-[154px] px-8 py-[22px] ">
                 <div className="grid grid-cols-3">
@@ -33,11 +33,11 @@ export default function Chat({messageText,name,ocupation, onClose, onSendMessage
             </div>
             
         {/* response + send button */}
-        <form action="">
-            <input type="text" placeholder="Type your message"  onChange={(e)=>setResponse(e.target.value)}/>
-            <button type="submit" onSubmit={()=>onSendMessage(response)}>send</button>
-        </form>
         </div>
+        <form action="" className=" h-[58px] w-[375px] bg-gray-300 grid grid-cols-4 ">
+            <input className="col-span-3 px-8 focus:outline-none" type="text" placeholder="Type your message"  onChange={(e)=>setResponse(e.target.value)}/>
+            <button type="submit" className=" text-[#4643D3] font-semibold bg-white" onSubmit={()=>onSendMessage(response)}>send</button>
+        </form>
     </div>
   )
 }
