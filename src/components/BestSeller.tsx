@@ -1,5 +1,5 @@
 
-interface BestSellerProps {
+export interface BestSellerProps {
     imageSource?: string;
     price?: string;
     modelName?: string;
@@ -9,12 +9,12 @@ interface BestSellerProps {
 
 export default function BestSeller({brand,imageSource, modelName, price }:BestSellerProps) {
   return (
-    <div className="group grid grid-cols-3 p-[13px] space-x-6 w-[311px] h-[120px] hover:bg-[#FEF2EE]  transition-all duration-[400ms] ease-in-out rounded-3xl">
+    <div className="group grid grid-cols-3 p-[13px] space-x-6 w-[311px] h-[120px] hover:bg-[#FEF2EE]  bg-white transition-all duration-[400ms] ease-in-out rounded-3xl">
         <img className=" h-[94px] w-[94px] object-fill "
-        style={{
-            WebkitTransform: " scaleX(-1)",
-            transform: " scaleX(-1)"
-        }} 
+        // style={{
+        //     WebkitTransform: " scaleX(-1)",
+        //     transform: " scaleX(-1)"
+        // }} 
         src={imageSource} 
         alt={modelName} />
         <div 
