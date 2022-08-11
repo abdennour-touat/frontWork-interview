@@ -34,7 +34,7 @@ export default function Chat({messageText,name,ocupation, onClose, onSendMessage
             
         {/* response + send button */}
         </div>
-        <form action="" className=" h-[58px] w-[375px] bg-gray-300 grid grid-cols-4 ">
+        <form action="GET" className=" h-[58px] w-[375px] bg-gray-300 grid grid-cols-4 ">
             <input className="col-span-3 px-8 focus:outline-none" type="text" placeholder="Type your message"  onChange={(e)=>setResponse(e.target.value)}/>
             <button type="submit" className=" text-[#4643D3] font-semibold bg-white" onSubmit={()=>onSendMessage(response)}>send</button>
         </form>

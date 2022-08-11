@@ -20,7 +20,15 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <>
-      <Story />
+      <div style={{
+        display: "flex",
+        justifyContent: "center",
+        marginTop: "10%",
+        backgroundClolor: "#FEF2EE",
+        padding: "30px"
+      }}>
+        <Story />
+      </div>
     </>
   ),
 ];
