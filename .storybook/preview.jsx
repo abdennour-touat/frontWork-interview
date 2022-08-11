@@ -8,13 +8,7 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
-    // decorators: [
-    //   (Story) => (
-    //     <div style={{ margin: "3em" }}>
-    //       <Story />
-    //     </div>
-    //   ),
-    // ],
+
   },
 };
 export const decorators = [

@@ -18,3 +18,4 @@ const Template: ComponentStory<typeof BestSeller> = (args) => <BestSeller {...ar
 
 export const Default = Template.bind({});
 
+
