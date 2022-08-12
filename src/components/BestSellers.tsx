@@ -5,7 +5,7 @@ interface BestSellersProps {
 }
 function BestSellers({data}:BestSellersProps) {
   return (
-    <div className=" px-[32px] py-[32px] bg-white space-y-3 rounded-3xl">
+    <div className=" sm:px-[32px] px-4 max-w-[375px] py-[32px] bg-white space-y-3 rounded-3xl">
       <h1 className="font-extrabold text-2xl">BestSellers</h1>
       {
       data.map(elt=>(

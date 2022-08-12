@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import BestSellers from '../components/BestSellers';
 
-import { data } from '../data';
+import { data,loadingData } from '../data';
 export default {
     title: "Best sellers",
     component: BestSellers,
@@ -10,6 +10,10 @@ export default {
     }
 } as ComponentMeta<typeof BestSellers>;
 
-const Template :ComponentStory<typeof BestSellers> = (args) => <BestSellers {...args}/>
+const Template :ComponentStory<typeof BestSellers> = (args) =><BestSellers {...args}/> 
 
 export const Default = Template.bind({});
+ export const Loading = Template.bind({});
+ Loading.args ={data: loadingData
+ };
+ 

@@ -14,8 +14,12 @@ export default {
     }
 } as ComponentMeta<typeof BestSeller>
 
-const Template: ComponentStory<typeof BestSeller> = (args) => <BestSeller {...args}/>
+const Template: ComponentStory<typeof BestSeller> = (args) => (<BestSeller {...args}/>)
 
 export const Default = Template.bind({});
+export const Loading = Template.bind({});
+Loading.args ={
+    isLoading: true
+}
 
 

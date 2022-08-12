@@ -1,8 +1,10 @@
 import "../src/index.css";
 import React from "react";
+import { Background } from "./Decorators";
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on.*' },
+
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -12,19 +14,7 @@ export const parameters = {
   },
 };
 export const decorators = [
-  (Story) => (
-    <>
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        marginTop: "10%",
-        backgroundClolor: "#FEF2EE",
-        padding: "30px"
-      }}>
-        <Story />
-      </div>
-    </>
-  ),
+  Background
 ];
 
 // export const decorators = [

@@ -12,6 +12,8 @@
     "chromatic": "npx chromatic --project-token=fe861dc3b419"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "@mui/icons-material": "^5.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
