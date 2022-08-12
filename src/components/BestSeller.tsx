@@ -3,7 +3,7 @@ export interface BestSellerProps {
   price?: string;
   modelName?: string;
   brand?: string;
-  onClickElement?: () => any;
+  onClickElement: () => any;
   isLoading?: boolean;
 }
 
@@ -15,6 +15,7 @@ export default function BestSeller({
   onClickElement,
   isLoading,
 }: BestSellerProps) {
+
   return (
     <>
       {!isLoading ? (
@@ -24,10 +25,6 @@ export default function BestSeller({
         >
           <img
             className=" h-[94px] w-[94px] object-fill col-span-2 sm:col-span-2"
-            // style={{
-            //     WebkitTransform: " scaleX(-1)",
-            //     transform: " scaleX(-1)"
-            // }}
             src={imageSource}
             alt={modelName}
           />
@@ -46,7 +43,7 @@ export default function BestSeller({
           </div>
         </div>
       ) : (
-        <div className="animate-pulse flex space-x-4 w-[311px] ">
+        <div className="animate-pulse flex space-x-4 w-[311px] bg-white px-[15px] py-[13px] rounded-3xl ">
           <div className="rounded-full bg-gray-300 h-12 w-12"></div>
           <div className="flex-1 space-y-6 py-1 mt-6 ">
             <div className="h-2 w-1/2 bg-gray-300 rounded"></div>
@@ -59,11 +56,6 @@ export default function BestSeller({
                 <div className="h-2 bg-gray-300 rounded col-span-2"></div>
                 <div className="h-2 bg-gray-300 rounded col-span-1"></div>
               </div>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="h-2 bg-gray-300 rounded col-span-2"></div>
-                <div className="h-2 bg-gray-300 rounded col-span-1"></div>
-              </div>
-              {/* <div className="h-2 bg-gray-300 rounded"></div> */}
             </div>
           </div>
         </div>

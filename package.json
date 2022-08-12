@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=fe861dc3b419"
+    "chromatic": "npx chromatic --project-token=fe861dc3b419",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -24,6 +25,7 @@
     "@storybook/addon-interactions": "^6.5.10",
     "@storybook/addon-links": "^6.5.10",
     "@storybook/addon-postcss": "^3.0.0-alpha.1",
+    "@storybook/api": "^6.5.10",
     "@storybook/builder-vite": "^0.2.2",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
